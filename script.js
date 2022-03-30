@@ -1,8 +1,10 @@
-var nama = prompt("Masukkan nama anda:");
-var angka = prompt("Masukkan nilai anda: ");
+let nama = prompt("Masukkan nama anda:");
+let angka = prompt("Masukkan nilai anda: ");
 
 function konversi(nama, angka) {
-  if (angka >= 101) {
+  if (angka == null || angka == "") {
+    alert("input kosong");
+  } else if (angka >= 101) {
     alert("Rentan nilai dari 1-100. Masukkan nilai yang benar");
   } else if (100 <= angka || angka >= 90) {
     alert("Selamat anda mendapat nilai A");
@@ -14,3 +16,4 @@ function konversi(nama, angka) {
 }
 
 konversi(nama, angka);
+alert;
